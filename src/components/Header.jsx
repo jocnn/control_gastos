@@ -1,11 +1,14 @@
 import BudgetControl from './BudgetControl'
 
-const Header = () => {
+const Header = ({ budget, setBudget }) => {
   return (
     <header>
       <h1>Planificador de Gastos</h1>
 
-      <BudgetControl />
+      <BudgetControl 
+        budget={budget}
+        setBudget={setBudget}
+      />
     </header>
   )
 }
