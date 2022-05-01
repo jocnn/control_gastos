@@ -1,8 +1,12 @@
+import Header from "./components/Header"
+
 function App() {
+
+  const [ budget, setBudget ] = useState(0)
 
   return (
     <div>
-      <h1>Control de Gastos</h1>
+      <Header />
     </div>
   )
 }
